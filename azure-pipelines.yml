@@ -62,4 +62,5 @@ steps:
   inputs:
     azureSubscription: 'spacegame'
     appName: 'spacegame'
-    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+    # package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/drop/*.zip'
